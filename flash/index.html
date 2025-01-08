@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Player</title>
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <embed id="flash-embed" width="850" height="600"> </embed>
+
+  <script src="/flash/flashplayer/ruffle.js"></script>
+  <script>
+    // Function to get query parameter value
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Get the value of 'g' parameter from the query string
+    const game = getQueryParam('g');
+
+    if (game) {
+      // Set the embed source to the appropriate SWF file
+      const embedElement = document.getElementById('flash-embed');
+      embedElement.src = `SWFs/${game}.swf`;
+    } else {
+      console.error('No game specified in the query string.');
+    }
+  </script>
+</body>
+
+</html>

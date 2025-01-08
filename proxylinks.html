@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxies</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="top">
+        <p>
+          <a href="index"><button class="btn">Games</button></a>
+          <a href="proxylinks.html"><button class="btn">Proxies</button></a>
+        </p>
+    </div>
+    <h2 style="padding-top: 50px;">Proxies</h1>
+    <div class="link-grid" id="buttonContainer"></div>
+
+    <script>
+        const buttonContainer = document.getElementById('buttonContainer');
+        const links = ["https://maybema.norushcharge.com/", "https://trentisasigma.photo-frame.com/", "https://notsigma.thehomeserver.net/", "https://homework.datagrid.cl/", "https://super.vitaldoc.cl/", "https://robotics.eduinnova.cl/", "https://slaves.we-trade.cl/", "https://maths.botar.uk/", "https://home.hillbrick.net/", "https://cpu.wikilegia.org/", "https://home.wikilegia.at/", "https://nah.nya.pub/", "https://mainsteetbathoomsareclean.naturefriend.com/", "https://schoolwork.norushcharge.com/", "https://fart-king-gaming.kalbas.com.vn/", "https://mason.sus.king.zanity.net/", "https://mason.sus.king-2.zanity.net/", "https://classroom.jamesonlee.com/", "https://blooket.privatedns.org/", "https://hub.cornwallprayerinitiative.com/", "https://linktreesucks-linkedit-is-better.megalogic-phoenix.com/", "https://nobodyshouldhavethis.intprosys.net/", "https://googleclassroomunknown8.megalogic-phoenix.com/", "https://free.robux.beclicked.com/", "https://free.vbucks.beclicked.com/", "https://news.westindiaquay.com/", "https://cast.away.pk/", "https://res.cdn.office.net.eduassignmentsui.voorl.com/", "https://dhchcjxh.bestbfs.org/", "https://himananndakedo.easterndns.com/"];
+        function aboutBlank(url) {
+            var win = window.open();
+            var iframe = win.document.createElement('iframe');
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+    
+        links.forEach((link, index) => {
+            const button = document.createElement('a');
+            button.textContent = `Proxy ${index + 1}`;
+            button.addEventListener('click', () => {
+                aboutBlank(link);
+            });
+            buttonContainer.appendChild(button);
+        });
+    </script>
+</body>
+</html>
