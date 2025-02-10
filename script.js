@@ -25,18 +25,21 @@ function populateLinks(targetId, links) {
   });
 }
 
-
 const bestGames = [
   {href: "polytrack-0.4.1-main", text: "Polytrack", image:"thumbnails/polytrack.jpg"},
   {href: "/flash/?g=fancypants", text: "The Fancy Pants Adventures", image: "thumbnails/fpa.jpg"},
   {href: "/flash/?g=riddleschool", text: "Riddle School", image: "thumbnails/riddle.jpg"},
   {href: "/flash/?g=redball", text: "Red Ball", image: "thumbnails/rb1.jpg"},
   {href: "/flash/?g=redball41", text: "Red Ball 4 Part 1", image: "thumbnails/rb41.jpg"},
-  {href: "miscgame/EaglercraftX_1.8.html", text: "Minecraft 1.8 (Requires Mouse)", image:"thumbnails/minecraft.jpg"},
+  {href: "ovo", text: "OVO", image:"thumbnails/ovo.jpg"},
+  {href: "offlineparadise", text: "Offline Paradise", image:"thumbnails/offlineparadise.jpg"},
+  {href: "miscgame/EaglercraftX_1.8.html", text: "Minecraft 1.8", image:"thumbnails/minecraft.jpg"},
   {href: "ctr", text: "Cut The Rope", image:"thumbnails/ctr.jpg"},
   {href: "hw", text: "Happy Wheels", image:"thumbnails/happywheels.jpg"},
   {href: "moto-frame/x3m1.html", text: "MotoX3M", image:"thumbnails/motox3m.jpg"},
   {href: "slope", text: "Slope", image:"thumbnails/slope.jpg"},
+  {href: "SuperHot", text: "Super Hot", image:"thumbnails/superhot.jpg"},
+  {href: "timeshooter1", text: "Time Shooter 1", image:"thumbnails/timeshooter1.jpg"},
   {href: "scratch/Appel.html", text: "Appel", image:"thumbnails/appel.png"},
   {href: "scratch/Snail.html", text: "Snail Platformer", image:"thumbnails/Snail.png"},
   {href: "scratch/SMM4.html", text: "Super Mario Maker 4", image:"thumbnails/SMM4.png"},
