@@ -26,7 +26,24 @@ function populateLinks(targetId, links) {
 }
 
 
+const bestGames = [
+  {href: "polytrack-0.4.1-main", text: "Polytrack", image:"thumbnails/polytrack.jpg"},
+  {href: "/flash/?g=fancypants", text: "The Fancy Pants Adventures", image: "thumbnails/fpa.jpg"},
+  {href: "/flash/?g=riddleschool", text: "Riddle School", image: "thumbnails/riddle.jpg"},
+  {href: "/flash/?g=redball", text: "Red Ball", image: "thumbnails/rb1.jpg"},
+  {href: "/flash/?g=redball41", text: "Red Ball 4 Part 1", image: "thumbnails/rb41.jpg"},
+  {href: "miscgame/EaglercraftX_1.8.html", text: "Minecraft 1.8 (Requires Mouse)", image:"thumbnails/minecraft.jpg"},
+  {href: "ctr", text: "Cut The Rope", image:"thumbnails/ctr.jpg"},
+  {href: "hw", text: "Happy Wheels", image:"thumbnails/happywheels.jpg"},
+  {href: "moto-frame/x3m1.html", text: "MotoX3M", image:"thumbnails/motox3m.jpg"},
+  {href: "slope", text: "Slope", image:"thumbnails/slope.jpg"},
+  {href: "scratch/Appel.html", text: "Appel", image:"thumbnails/appel.png"},
+  {href: "scratch/Snail.html", text: "Snail Platformer", image:"thumbnails/Snail.png"},
+  {href: "scratch/SMM4.html", text: "Super Mario Maker 4", image:"thumbnails/SMM4.png"},
+]
+
 const flashGames = [
+  {href: "/flash/?g=line-rider", text: "Line Rider", image: "thumbnails/line-rider.png"},
   {href: "/flash/?g=alien_hominid", text: "Alien Hominid", image: "thumbnails/alien.jpg"},
   {href: "/flash/?g=age_of_war", text: "Age Of War", image: "thumbnails/ageofwar.jpg"},
   {href: "/flash/?g=apple_shooter", text: "Apple Shooter", image: "thumbnails/apple.jpg"},
@@ -108,6 +125,28 @@ const flashGames = [
 ];
 
 const otherGames = [
+  {href: "subwaysurfers", text: "Subway Surfers", image:"thumbnails/subwaysurfers.jpg"},
+  {href: "jetpackjoyride", text: "Jetpack Joyride", image:"thumbnails/jetpackjoyride.jpg"},
+  {href: "offlineparadise", text: "Offline Paradise", image:"thumbnails/offlineparadise.jpg"},
+  {href: "ovo", text: "OVO", image:"thumbnails/ovo.jpg"},
+  {href: "templerun2", text: "Temple Run 2", image:"thumbnails/templerun2.jpg"},
+  {href: "flappy", text: "Flappy Bird", image:"thumbnails/flappy.png"},
+  {href: "crossy", text: "Crossy Roads", image:"thumbnails/crossy.jpg"},
+  {href: "driftboss", text: "Drift Boss", image:"thumbnails/driftboss.jpg"},
+  {href: "stickmanhook", text: "Stickman Hook", image:"thumbnails/stickmanhook.png"},
+  {href: "stack", text: "Stack", image:"thumbnails/stack.jpg"},
+  {href: "knifehit", text: "Knife Hit", image:"thumbnails/knifehit.jpg"},
+  {href: "basketrandom", text: "Basket Random", image:"thumbnails/basketrandom.jpg"},
+  {href: "volleyrandom", text: "Volley Random", image:"thumbnails/volleyrandom.jpg"},
+  {href: "watermelongame", text: "Watermelon Game", image:"thumbnails/watermelongame.jpg"},
+  {href: "thereisnogame", text: "There Is No Game", image:"thumbnails/thereisnogame.jpg"},
+  {href: "sandtrix", text: "Sandtrix", image:"thumbnails/sandtrix.jpg"},
+  {href: "colorswitch", text: "Color Switch", image:"thumbnails/colorswitch.jpg"},
+  {href: "gdlite", text: "Geometry Dash Lite", image:"thumbnails/gdlite.jpg"},
+  {href: "SuperHot", text: "Super Hot", image:"thumbnails/superhot.jpg"},
+  {href: "timeshooter1", text: "Time Shooter 1", image:"thumbnails/timeshooter1.jpg"},
+  {href: "timeshooter2", text: "Time Shooter 2", image:"thumbnails/timeshooter2.jpg"},
+  {href: "timeshooter3", text: "Time Shooter 3", image:"thumbnails/timeshooter3.jpg"},
   {href: "miscgame/EaglercraftX_1.8.html", text: "Minecraft 1.8 (Requires Mouse)", image:"thumbnails/minecraft.jpg"},
   {href: "bitlife", text: "Bitlife", image:"thumbnails/bitlife.png"},
   {href: "sausage-flip", text: "Sausage Flip", image:"thumbnails/sausage.png"},
@@ -121,6 +160,8 @@ const otherGames = [
   {href: "FNAF/2", text: "FNAF 2", image:"thumbnails/fnaf2.jpg"},
   {href: "FNAF/3", text: "FNAF 3", image:"thumbnails/fnaf3.jpg"},
   {href: "googdino", text: "Google Dinosaur", image:"thumbnails/dino.jpg"},
+  {href: "EdgeSurf", text: "Edge Surf", image:"thumbnails/surf.jpg"},
+  {href: "operius", text: "Operius", image:"thumbnails/operius.webp"},
   {href: "googsnake", text: "Google Snake", image:"thumbnails/googlesnake.jpg"},
   {href: "hw", text: "Happy Wheels", image:"thumbnails/happywheels.jpg"},
   {href: "mario", text: "Mari0", image:"thumbnails/mari0.jpg"},
@@ -136,6 +177,19 @@ const otherGames = [
   {href: "slope", text: "Slope", image:"thumbnails/slope.jpg"},
   {href: "sm64", text: "Super Mario 64", image:"thumbnails/sm64.jpg"},
   {href: "wolfen", text: "Wolfenstein 3D", image:"thumbnails/Wolfenstein.jpg"}
+];
+
+const scratchGames = [
+  {href: "scratch/Appel.html", text: "Appel", image:"thumbnails/appel.png"},
+  {href: "scratch/Celeste.html", text: "Celeste", image:"thumbnails/Celeste.png"},
+  {href: "scratch/EpicNinja.html", text: "Epic Ninja", image:"thumbnails/EpicNinja.jpg"},
+  {href: "scratch/PaperGlider.html", text: "Paper Glider", image:"thumbnails/PaperGlider.png"},
+  {href: "scratch/sm2da.html", text: "Super Mario 2D Adventure", image:"thumbnails/sm2da.png"},
+  {href: "scratch/SMFS4.html", text: "Super Mario for Scratch 4", image:"thumbnails/SMFS4.png"},
+  {href: "scratch/SMM4.html", text: "Super Mario Maker 4", image:"thumbnails/SMM4.png"},
+  {href: "scratch/SMoS5.html", text: "Super Mario on Scratch 5", image:"thumbnails/SMoS5.png"},
+  {href: "scratch/Submersible.html", text: "Submersible", image:"thumbnails/Submersible.png"},
+  {href: "scratch/Snail.html", text: "Snail Platformer", image:"thumbnails/Snail.png"},
 ];
 
 const emulatedGames = [
@@ -157,8 +211,10 @@ const emulatedGames = [
   {href: "GBA-gh-pages/launcher.html#supermarioadvance2", text: "Super Mario World (GBA)", image:"thumbnails/smw.jpg"}
 ];
 
+populateLinks("bestGames", bestGames);
 populateLinks("flashGames", flashGames);
 populateLinks("otherGames", otherGames);
+populateLinks("scratchGames", scratchGames);
 populateLinks("emulatedGames", emulatedGames);
 
 function filterGames() {
@@ -166,9 +222,19 @@ function filterGames() {
 
   const filteredFlashGames = flashGames.filter(game => game.text.toLowerCase().includes(searchTerm));
   const filteredOtherGames = otherGames.filter(game => game.text.toLowerCase().includes(searchTerm));
+  const filteredScratchGames = scratchGames.filter(game => game.text.toLowerCase().includes(searchTerm));
   const filteredEmulatedGames = emulatedGames.filter(game => game.text.toLowerCase().includes(searchTerm));
+
+  if (searchTerm != ""){
+    populateLinks("bestGames", []);
+    document.getElementById("removableTitle").textContent="";
+  }else{
+    populateLinks("bestGames", bestGames);
+    document.getElementById("removableTitle").textContent=" Ian's Favorites ";
+  }
 
   populateLinks("flashGames", filteredFlashGames);
   populateLinks("otherGames", filteredOtherGames);
+  populateLinks("scratchGames", filteredScratchGames);
   populateLinks("emulatedGames", filteredEmulatedGames);
 }

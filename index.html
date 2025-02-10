@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TCHS Games</title>
+  <title>Ian's Chili</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -14,15 +14,22 @@
         <input class="search-bar btn" type="text" id="gameSearch" placeholder="Search for a game..." oninput="filterGames()">
       </p>
     </div>
-    <h2 style="padding-top: 50px;"> Flash G@mes </h2>
+    <h2 style="padding-top: 50px;" id="removableTitle"> Ian's Favorites </h2>
+    <div class="link-grid" id="bestGames"></div>
+    <p> </p>
+    <h2> Flash Games </h2>
     <div class="link-grid" id="flashGames"></div>
     <p> </p>
-    <h2> Other G@mes </h2>
+    <h2> Other Games </h2>
     <div class="link-grid" id="otherGames"></div>
     <p> </p>
-    <h2> Emul@ted </h2>
+    <h2> Scratch Games </h2>
+    <div class="link-grid" id="scratchGames"></div>
+    <p> </p>
+    <h2> Emulated </h2>
     <div class="link-grid" id="emulatedGames"></div>
   </div>
+  <p>How can I make it blue if it's already blue???<p>
   <script src="script.js"></script>
 </body>
 </html>
