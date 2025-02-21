@@ -128,6 +128,7 @@ const flashGames = [
 ];
 
 const otherGames = [
+  {href: "blockblast", text: "Block Blast", image:"thumbnails/blockblast.jpg"},
   {href: "subwaysurfers", text: "Subway Surfers", image:"thumbnails/subwaysurfers.jpg"},
   {href: "jetpackjoyride", text: "Jetpack Joyride", image:"thumbnails/jetpackjoyride.jpg"},
   {href: "offlineparadise", text: "Offline Paradise", image:"thumbnails/offlineparadise.jpg"},
