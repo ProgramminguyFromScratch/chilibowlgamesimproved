@@ -40,6 +40,7 @@ const bestGames = [
   {href: "slope", text: "Slope", image:"thumbnails/slope.jpg"},
   {href: "SuperHot", text: "Super Hot", image:"thumbnails/superhot.jpg"},
   {href: "timeshooter1", text: "Time Shooter 1", image:"thumbnails/timeshooter1.jpg"},
+  {href: "blockblast", text: "Block Blast", image:"thumbnails/blockblast.jpg"},
   {href: "scratch/Appel.html", text: "Appel", image:"thumbnails/appel.png"},
   {href: "scratch/Snail.html", text: "Snail Platformer", image:"thumbnails/Snail.png"},
   {href: "scratch/SMM4.html", text: "Super Mario Maker 4", image:"thumbnails/SMM4.png"},
