@@ -212,6 +212,8 @@ const emulatedGames = [
   {href: "GBA-gh-pages/launcher.html#gta", text: "Grand Theft Auto (GBA)", image:"thumbnails/gta.jpg"},
   {href: "GBA-gh-pages/launcher.html#nbaj", text: "NBA Jam 2002 (GBA)", image:"thumbnails/nbajam.jpg"},
   {href: "GBA-gh-pages/launcher.html#pokemonemerald", text: "Pokemon Emerald (GBA)", image:"thumbnails/pokemonemerald.jpg"},
+  {href: "GBA-gh-pages/launcher.html#PokemonFireRed", text: "Pokemon Fire Red (GBA)", image:"thumbnails/PokemonFireRed.jpg"},
+  {href: "GBA-gh-pages/launcher.html#PokemonLeafGreen", text: "Pokemon Leaf Green (GBA)", image:"thumbnails/PokemonLeafGreen.jpg"},
   {href: "GBA-gh-pages/launcher.html#super_street_fighter_3_alpha", text: "Street Fighter Alpha III (GBA)", image:"thumbnails/sfa3.jpg"},
   {href: "GBA-gh-pages/launcher.html#supermarioadvance2", text: "Super Mario World (GBA)", image:"thumbnails/smw.jpg"}
 ];
