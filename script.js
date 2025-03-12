@@ -47,6 +47,10 @@ const bestGames = [
 ]
 
 const flashGames = [
+  {href: "/flash/?g=PapasPizzeria", text: "Papa's Pizzeria", image: "thumbnails/PapasPizzeria.jpg"},
+  {href: "/flash/?g=PapasBurgeria", text: "Papa's Burgeria", image: "thumbnails/PapasBurgeria.jpg"},
+  {href: "/flash/?g=PapasFreezeria", text: "Papa's Freezeria", image: "thumbnails/PapasFreezeria.jpg"},
+  {href: "/flash/?g=PapasPancakeria", text: "Papa's Pancakeria", image: "thumbnails/PapasPancakeria.jpg"},
   {href: "/flash/?g=line-rider", text: "Line Rider", image: "thumbnails/line-rider.png"},
   {href: "/flash/?g=alien_hominid", text: "Alien Hominid", image: "thumbnails/alien.jpg"},
   {href: "/flash/?g=age_of_war", text: "Age Of War", image: "thumbnails/ageofwar.jpg"},
