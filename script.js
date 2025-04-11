@@ -26,7 +26,7 @@ function populateLinks(targetId, links) {
 }
 
 const bestGames = [
-  {href: "polytrack-0.4.1-main", text: "Polytrack", image:"thumbnails/polytrack.jpg"},
+  {href: "polytrack", text: "Polytrack", image:"thumbnails/polytrack5.png"},
   {href: "/flash/?g=fancypants", text: "The Fancy Pants Adventures", image: "thumbnails/fpa.jpg"},
   {href: "/flash/?g=riddleschool", text: "Riddle School", image: "thumbnails/riddle.jpg"},
   {href: "/flash/?g=redball", text: "Red Ball", image: "thumbnails/rb1.jpg"},
@@ -160,7 +160,8 @@ const otherGames = [
   {href: "bitlife", text: "Bitlife", image:"thumbnails/bitlife.png"},
   {href: "sausage-flip", text: "Sausage Flip", image:"thumbnails/sausage.png"},
   {href: "slow-roads-main", text: "Slowroads", image:"thumbnails/slowroads.jpg"},
-  {href: "polytrack-0.4.1-main", text: "Polytrack", image:"thumbnails/polytrack.jpg"},
+  {href: "polytrack", text: "Polytrack", image:"thumbnails/polytrack5.png"},
+  {href: "polytrack-0.4.1-main", text: "Polytrack 0.4", image:"thumbnails/polytrack.jpg"},
   {href: "2048", text: "2048", image:"thumbnails/2048.jpg"},
   {href: "bstars", text: "Basketball Stars", image:"thumbnails/bballstars.jpg"},
   {href: "blackjack", text: "BlackJack", image:"thumbnails/blackjack.jpg"},
