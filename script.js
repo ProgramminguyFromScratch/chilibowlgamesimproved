@@ -25,7 +25,7 @@ function populateLinks(targetId, links) {
   });
 }
 
-const bestGames = [
+const best = [
   {href: "polytrack", text: "Polytrack", image:"thumbnails/polytrack5.png"},
   {href: "/flash/?g=fancypants", text: "The Fancy Pants Adventures", image: "thumbnails/fpa.jpg"},
   {href: "/flash/?g=riddleschool", text: "Riddle School", image: "thumbnails/riddle.jpg"},
@@ -46,7 +46,9 @@ const bestGames = [
   {href: "scratch/SMM4.html", text: "Super Mario Maker 4", image:"thumbnails/SMM4.png"},
 ]
 
-const flashGames = [
+
+const flash = [
+  {href: "/flash/?g=ace_gangster_taxi", text: "Ace Gangster Taxi", image: "thumbnails/acegangster.gif"},
   {href: "/flash/?g=PapasPizzeria", text: "Papa's Pizzeria", image: "thumbnails/PapasPizzeria.jpg"},
   {href: "/flash/?g=PapasBurgeria", text: "Papa's Burgeria", image: "thumbnails/PapasBurgeria.jpg"},
   {href: "/flash/?g=PapasFreezeria", text: "Papa's Freezeria", image: "thumbnails/PapasFreezeria.jpg"},
@@ -132,7 +134,7 @@ const flashGames = [
   {href: "/flash/?g=ultimate_flash_sonic", text: "Ultimate Flash Sonic", image: "thumbnails/sonic.jpg"}
 ];
 
-const otherGames = [
+const other = [
   {href: "blockblast", text: "Block Blast", image:"thumbnails/blockblast.jpg"},
   {href: "subwaysurfers", text: "Subway Surfers", image:"thumbnails/subwaysurfers.jpg"},
   {href: "jetpackjoyride", text: "Jetpack Joyride", image:"thumbnails/jetpackjoyride.jpg"},
@@ -189,7 +191,7 @@ const otherGames = [
   {href: "wolfen", text: "Wolfenstein 3D", image:"thumbnails/Wolfenstein.jpg"}
 ];
 
-const scratchGames = [
+const scratch = [
   {href: "scratch/Appel.html", text: "Appel", image:"thumbnails/appel.png"},
   {href: "scratch/Celeste.html", text: "Celeste", image:"thumbnails/Celeste.png"},
   {href: "scratch/EpicNinja.html", text: "Epic Ninja", image:"thumbnails/EpicNinja.jpg"},
@@ -202,7 +204,7 @@ const scratchGames = [
   {href: "scratch/Snail.html", text: "Snail Platformer", image:"thumbnails/Snail.png"},
 ];
 
-const emulatedGames = [
+const emulated = [
   {href: "example/batman.html", text: "Batman (NES)", image:"thumbnails/batman.jpg"},
   {href: "miscgame/dd.html", text: "Double Dragon (NES)", image:"thumbnails/dd.jpg"},
   {href: "example/ducktales.html", text: "Duck Tales (NES)", image:"thumbnails/ducktales.jpg"},
@@ -223,30 +225,30 @@ const emulatedGames = [
   {href: "GBA-gh-pages/launcher.html#supermarioadvance2", text: "Super Mario World (GBA)", image:"thumbnails/smw.jpg"}
 ];
 
-populateLinks("bestGames", bestGames);
-populateLinks("flashGames", flashGames);
-populateLinks("otherGames", otherGames);
-populateLinks("scratchGames", scratchGames);
-populateLinks("emulatedGames", emulatedGames);
+populateLinks("best", best);
+populateLinks("flash", flash);
+populateLinks("other", other);
+populateLinks("scratch", scratch);
+populateLinks("emulated", emulated);
 
-function filterGames() {
-  const searchTerm = document.getElementById('gameSearch').value.toLowerCase();
+function filter() {
+  const searchTerm = document.getElementById('earch').value.toLowerCase();
 
-  const filteredFlashGames = flashGames.filter(game => game.text.toLowerCase().includes(searchTerm));
-  const filteredOtherGames = otherGames.filter(game => game.text.toLowerCase().includes(searchTerm));
-  const filteredScratchGames = scratchGames.filter(game => game.text.toLowerCase().includes(searchTerm));
-  const filteredEmulatedGames = emulatedGames.filter(game => game.text.toLowerCase().includes(searchTerm));
+  const filteredFlash = flash.filter(game => game.text.toLowerCase().includes(searchTerm));
+  const filteredOther = other.filter(game => game.text.toLowerCase().includes(searchTerm));
+  const filteredScratch = scratch.filter(game => game.text.toLowerCase().includes(searchTerm));
+  const filteredEmulated = emulated.filter(game => game.text.toLowerCase().includes(searchTerm));
 
   if (searchTerm != ""){
-    populateLinks("bestGames", []);
+    populateLinks("best", []);
     document.getElementById("removableTitle").textContent="";
   }else{
-    populateLinks("bestGames", bestGames);
+    populateLinks("best", best);
     document.getElementById("removableTitle").textContent=" Ian's Favorites ";
   }
 
-  populateLinks("flashGames", filteredFlashGames);
-  populateLinks("otherGames", filteredOtherGames);
-  populateLinks("scratchGames", filteredScratchGames);
-  populateLinks("emulatedGames", filteredEmulatedGames);
+  populateLinks("flash", filteredFlash);
+  populateLinks("other", filteredOther);
+  populateLinks("scratch", filteredScratch);
+  populateLinks("emulated", filteredEmulated);
 }
