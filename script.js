@@ -232,7 +232,7 @@ populateLinks("scratch", scratch);
 populateLinks("emulated", emulated);
 
 function filter() {
-  const searchTerm = document.getElementById('earch').value.toLowerCase();
+  const searchTerm = document.getElementById('Search').value.toLowerCase();
 
   const filteredFlash = flash.filter(game => game.text.toLowerCase().includes(searchTerm));
   const filteredOther = other.filter(game => game.text.toLowerCase().includes(searchTerm));
